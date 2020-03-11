@@ -1,0 +1,185 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+
+}
+
+
+body{
+	font-family: 'Meiryo UI', cursive;
+
+}
+
+*{
+    /* 画像の余白を消去 */
+    margin: 0;
+    padding: 0;
+}
+
+.MainWrapper {
+    border: none;
+
+}
+
+.TopContents video{
+    margin: 75px 0 0 0;
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.AboutContents{
+    margin: 100px 0 0 0;
+}
+
+.AboutTitle{
+    margin: 0 2%;
+    font-size: 28px;
+    width: 45%;
+    height: 120px;
+    float: right;
+}
+
+.ImgAbout{
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+    float: left;
+}
+
+.MsgAbout{
+    margin: 0 2%;
+    width: 45%;
+    height: 300px;
+    float: right;
+    font-size: 20px;
+}
+
+.ConAbout{
+    margin: 0 2%;
+    width: 45%;
+    height: 280px;
+    float: right;
+}
+
+.WorkContents{
+    margin: 0;
+}
+
+.WorkTitle{
+    margin: 0 2%;
+    font-size: 28px;
+    width: 45%;
+    height: 120px;
+    float: left;
+}
+
+.ImgWork{
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+    float: right;
+}
+
+.MsgWork{
+    margin: 0 2%;
+    width: 45%;
+    height: 300px;
+    float: left;
+    font-size: 20px;
+}
+
+.ConWork{
+    margin: 0 2%;
+    width: 45%;
+    height: 280px;
+    float: left; 
+}
+
+.RecruitTitle{
+    margin: 0 2%;
+    font-size:28px;
+    width: 45%;
+    height: 120px;
+    float: right;
+}
+
+.RecruitContents img {
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+    float: left;
+}
+
+.MsgRecruit{
+    margin: 0 2%;
+    width: 45%;
+    height: 300px;
+    float: right;
+    font-size: 20px;
+}
+
+.ConRecruit{
+    margin: 0 2%;
+    width: 45%;
+    height: 280px;
+    float: right;
+}
+
+
+.FAQContents{
+    margin: 0;
+}
+
+.FAQTitle{
+    margin: 0 2%;
+    font-size: 28px;
+    width: 45%;
+    height: 120px;
+    float: left;
+}
+
+.ImgFAQ{
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+    float: right;
+}
+
+.MsgFAQ{
+    margin: 0 2%;
+    width: 45%;
+    height: 300px;
+    float: left;
+    font-size: 20px;
+}
+
+.ConFAQ{
+    margin: 0 2%;
+    width: 45%;
+    height: 280px;
+    float: left; 
+}
+
+.bt-About, .bt-Work, .bt-Recruit, .bt-About, .bt-FAQ{
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    height:35px;
+    width: 120px;
+    line-height: 37px;
+    text-align: center;
+    color: #0f4c81;
+    border:solid 1px #0f4c81;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.bt-About:hover, .bt-Work:hover, .bt-Recruit:hover, .bt-FAQ:hover{
+    background: #0f4c81;
+    color: #fff;
+}
