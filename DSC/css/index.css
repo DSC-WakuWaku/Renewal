@@ -3,17 +3,17 @@ html, body {
     padding: 0;
     margin: 0;
     border: none;
+    height: 5000px;
 }
 
 #HeaderWrapper {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 250px;
+    height: 50px;
     position: fixed;
     overflow: hidden;
     background-color:white; /*#0f4c81;*/
-    /*border-bottom: 1px black solid;*/
     opacity: 0.9;
 }
 
@@ -136,13 +136,13 @@ html, body {
 
 #MainWrapper {
     width: 100%;
-    height: 6000px;
+    height: 5000px;
 }
 
 .MainContents iframe {
     margin: 0;
     width: 100%;
-    height: 6000px;
+    height: 5000px;
     border: none;    
 }
 .MainFrame iframe{
@@ -152,7 +152,7 @@ html, body {
 #FooterWrapper {
     width: 100%;
     height: 300px;
-    border-top: 0.1px black solid;
+    border-top: 0.1px gray solid;
 }
 
 .FooterLeft {
