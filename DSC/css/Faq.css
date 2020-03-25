@@ -8,102 +8,18 @@ html, body {
     line-height: 50px;
 }
 
-.AboutContents {
-    position: relative;
-    width: 100%;
-    height: 100%;    
-}
-
-.AboutPic {
-    margin: 0;
-    position: fixed;
-    z-index: -1;
-}
-
-.AboutPic img,
-.WorkContents img,
-.RecruitContents img,
 .FaqContents img {
     width: 100%;
     height: 100%; 
 }
 
-.MsgAbout {
-    margin: -250px 0 0 0;
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    top: 1000px;
-    background-color: white;
-}
-
-.ConAbout {
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 1550px;
-    text-align: center;
-    background-color: white;
-}
-
-.WorkContents,
-.RecruitContents,
 .FaqContents {
     position: relative;
-    top: 1650px;
     width: 100%;
     height: 100%;
     background-color: white;
 }
 
-.MsgWork,
-.MsgRecruit, 
 .MsgFaq {
     height: 450px;
-}
-
-.ConAbout,
-.ConWork,
-.ConRecruit,
-.ConFaq {
-    height: 100px;
-}
-
-.ConAbout li,
-.ConWork li,
-.ConRecruit li,
-.ConFaq li {
-    position: relative;
-    display: inline-block;
-    padding: 0;
-}
-
-.ConAbout a,
-.ConWork a,
-.ConRecruit a,
-.ConFaq a {
-    text-decoration: none;
-    color: black;
-}
-
-.ConAbout li::before,
-.ConWork li::before,
-.ConRecruit li::before,
-.ConFaq li::before {
-    position: absolute;
-    content: '';
-    width: 0%;
-    height: 1px;
-    top:calc(100% - 10px);
-    border-radius: 3px;
-    background: black;
-    transition: .2s;
-}
-
-.ConAbout li:hover::before,
-.ConWork li:hover::before,
-.ConRecruit li:hover::before,
-.ConFaq li:hover::before {
-    width: 100%;
 }

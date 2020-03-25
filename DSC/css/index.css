@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 html, body {
 	font-family: 'Meiryo UI', cursive;
     padding: 0;
@@ -18,7 +22,7 @@ html, body {
 }
 
 .HeaderLeft {
-    width: 20%;
+    width: 65%;
     height: 50px;
     float: left;
 }
@@ -35,27 +39,25 @@ html, body {
 }
 
 .HeaderRight {
-    width: 80%;
+    width: 35%;
     height: 50px;
     float: right;
 }
 
 .HeaderRight ul {
     list-style: none;
-    float: right;
 }
 
 #btnAboutDSC,
 #btnWork,
 #btnRecruit,
 #btnFaq {
-    margin: 0;
-    padding: 0 10px 0 10px;
+    margin: 15px 10px 20px 0;
+    padding: 0;
     position: relative;
     width: 100px;
     height: 20px;
     font-size: 12pt;
-    color: black; /*white;*/
     text-align: center;
     float: left;
 }
@@ -77,18 +79,17 @@ html, body {
     overflow: hidden;
     opacity: 0;
     transition: 0.5s;
-    
 }
 
 #btnAboutDSC input:checked ~ .HeaderSubMenu-AboutDSC,
 #btnWork input:checked ~ .HeaderSubMenu-Work,
 #btnRecruit input:checked ~ .HeaderSubMenu-Recruit,
 #btnFaq input:checked ~ .HeaderSubMenu-Faq {
-    padding: 10px 0;
+    padding: 0;
     width: 200px;
     height: auto;
     opacity: 1;
-    background-color: aqua;
+    background-color: lightgray;
 }
 
 #btnAboutDSC label::before,
@@ -145,6 +146,7 @@ html, body {
     height: 5000px;
     border: none;    
 }
+
 .MainFrame iframe{
 
 }
@@ -153,6 +155,7 @@ html, body {
     width: 100%;
     height: 300px;
     border-top: 0.1px gray solid;
+    position: relative;
 }
 
 .FooterLeft {
