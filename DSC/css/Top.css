@@ -10,6 +10,7 @@ html, body {
     font-size: 16pt;
     text-align: center;
     line-height: 50px;
+    color: darkslategray;
 }
 
 .AboutContents {
@@ -169,7 +170,7 @@ html, body {
 .ConRecruit a,
 .ConFaq a {
     text-decoration: none;
-    color: black;
+    color: darkslategray;
 }
 
 .ConAbout li::before,
@@ -182,7 +183,7 @@ html, body {
     height: 1px;
     top:calc(100% - 10px);
     border-radius: 3px;
-    background: black;
+    background: darkslategray;
     transition: .2s;
 }
 
