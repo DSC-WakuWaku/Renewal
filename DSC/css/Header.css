@@ -1,146 +1,54 @@
-html, bpdy {
-    padding: 0;
-    margin: 0;    
-}
-
 * {
     padding: 0;
     margin: 0;    
 }
 
 #HeaderWrapper {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 50px;
     height: auto;
     position: fixed;
     overflow: hidden;
     background-color:white; /*#0f4c81;*/
     opacity: 0.9;
-    color: darkslategray;
 }
 
 .HeaderLeft {
     width: 60%;
-    height: 50px;
+    height: auto;
     float: left;
 }
 
 .HeaderLeft img {
     margin: 5px;
-    padding: 0;
     width: 100px;
-    height: 40px;
-}
-
-.HeaderLeft ul {
-    list-style: none;
+    height: auto;
 }
 
 .HeaderRight {
     width: 40%;
-    height: 50px;
+    height: auto;
     float: right;
 }
 
-.HeaderRight ul {
-    list-style: none;
-}
-
-#btnAboutDSC,
-#btnWork,
-#btnRecruit,
-#btnFaq {
+.HeaderMenu ul {
     margin: 15px 10px 20px 0;
-    padding: 0;
-    position: relative;
-    width: 100px;
-    height: 20px;
+    overflow: hidden;
+    list-style: none;
     font-size: 12pt;
     text-align: center;
-    float: left;
 }
 
-#btnAboutDSC input,
-#btnWork input,
-#btnRecruit input,
-#btnFaq input {
-    display: none;
-}
-
-.HeaderSubMenu-AboutDSC,
-.HeaderSubMenu-Work,
-.HeaderSubMenu-Recruit,
-.HeaderSubMenu-Faq {
-    text-align: left;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.HeaderSubMenu-AboutDSC li:hover,
-.HeaderSubMenu-Work li:hover,
-.HeaderSubMenu-Recruit li:hover,
-.HeaderSubMenu-Faq li:hover {
-    color: red;
-}
-
-#btnAboutDSC li:hover < #HeaderWrapepr {
-    height: 300px;
-}
-
-#btnAboutDSC input:checked ~ .HeaderSubMenu-AboutDSC,
-#btnWork input:checked ~ .HeaderSubMenu-Work,
-#btnRecruit input:checked ~ .HeaderSubMenu-Recruit,
-#btnFaq input:checked ~ .HeaderSubMenu-Faq {
-    padding: 0;
-    width: 200px;
+.HeaderMenu li {
+    margin: 0 0 0 20px;
+    float: left; 
     height: auto;
-    opacity: 1;
 }
 
-#btnAboutDSC label::before,
-#btnWork label::before,
-#btnRecruit label::before,
-#btnFaq label::before,
-#btnAboutDSC label::after,
-#btnWork label::after,
-#btnRecruit label::after,
-#btnFaq label::after {
-    border-bottom: 1px darkslategray /*white*/ solid;
-    bottom: -5px;
-    content: "";
-    position: absolute;
-    transition: all .2s ease;
-    -webkit-transition: all .2s ease;
-    width: 0;
-    color: black;
+.HeaderMenu a {
+    text-decoration: none;
+    color:black;
 }
 
-#btnAboutDSC label::before,
-#btnWork label::before,
-#btnRecruit label::before,
-#btnFaq label::before {
-    left: 50%;
-}
-
-#btnAboutDSC label::after,
-#btnWork label::after,
-#btnRecruit label::after,
-#btnFaq label::after {
-    right: 50%;
-}
-
-#btnAboutDSC label:hover::before,
-#btnWork label:hover::before,
-#btnRecruit label:hover::before,
-#btnFaq label:hover::before,
-#btnAboutDSC label:hover::after,
-#btnWork label:hover::after,
-#btnRecruit label:hover::after,
-#btnFaq label:hover::after {
-    width: 50%;
+.HeaderMenu a:hover {
+    color:darkslategray;
 }

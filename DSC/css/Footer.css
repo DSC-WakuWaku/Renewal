@@ -1,6 +1,7 @@
 html, bpdy {
     padding: 0;
-    margin: 0;    
+    margin: 0; 
+    text-decoration: none;
 }
 
 * {
@@ -19,7 +20,6 @@ html, bpdy {
     width: 40%;
     height: 250px;
     float: left;
-    list-style: none;
 }
 
 .FooterLeft ul {
@@ -44,7 +44,9 @@ html, bpdy {
     font-size: 12pt;
 }
 
-.FooterMenu li {
+.FooterMenu a {
+    text-decoration: none;
+    color: black;
 }
 
 #FooterMenu-AboutDSC,
@@ -64,10 +66,10 @@ html, bpdy {
     padding: 0;
 }
 
-#FooterMenu-AboutDSC li:hover,
-#FooterMenu-Work li:hover,
-#FooterMenu-Recruit li:hover,
-#FooterMenu-Faq li:hover {
+#FooterMenu-AboutDSC a:hover,
+#FooterMenu-Work a:hover,
+#FooterMenu-Recruit a:hover,
+#FooterMenu-Faq a:hover {
     color: darkslategray;
 }
 

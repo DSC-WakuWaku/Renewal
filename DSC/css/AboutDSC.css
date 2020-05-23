@@ -5,74 +5,21 @@
 }
 
 body {
-    display          : inline-flex;
+    display          : flex;
     flex-direction   : column;
     align-items      : left;
     width            : 100%;
     height           : 100vh;
     font-family      : 'Poppins', 'Helvetica', sans-serif;
     background-image : linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    margin: 0px, 0px, 200px, 0px;
 }
 
-div {
-    flex-direction: row;
-}
 
-.main-disp {
-    display: inline-block;
-}
 
-.menu-list {
-  float : left;
-}
-
-.infomation {
-  background-color: floralwhite;
-  width:auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-  margin: 0 auto;
-}
-
-.AboutPic {
-  margin: 10;
-  position: relative;
-  z-index: -1;
-  display: inline;
-}
-
-.AboutPic img {
+.example img {
   width: 100%;
-  height: 100%; 
 }
-
-.imgTitle {
-  position          : absolute;
-  top               : 50%;
-  left              : 50%;
-  -ms-transform     : translate(-50%,-50%);
-  -webkit-transform : translate(-50%,-50%);
-  transform         : translate(-50%,-50%);
-  margin            : 0;
-  padding           : 0;
-  color             : white;
-  font-size         : 2em;
-}
-
-ul.menu-list-table {
-  display:-webkit-flex;
-  display:flex;
-  width:100%;
-  list-style-type:none;
-  margin:0; padding:0;
-  }
-  ul.menu-list-table li {
-  width:25%;
-  }
-
-/*
-.resizeimage img {
-    width: 100%; 
-}*/
 
 .btn {
     --w: 300px;
@@ -87,9 +34,12 @@ ul.menu-list-table {
 div {margin-bottom: 20px;}
 div:last-child {margin-bottom: 0px;}
 
+.AboutPic {
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
 
-
-/* btn Animation Begin */
 i {
     content    : '';
     width      : 100%;
@@ -119,7 +69,7 @@ span {
     letter-spacing: 4px;
     text-align: center;
     text-transform: uppercase;
-    color: hsl(var(--primary));
+    color: hsl(var(--primary));    
     transition: all .4s var(--c);
     z-index: 100;
 }
@@ -148,7 +98,7 @@ span {
 .style-1 i,
 .style-2 i,
 .style-5 i,
-.style-6 i {
+.style-6 i {    
     transform: scaleX(0);
 }
 
@@ -174,5 +124,14 @@ span {
     transition-delay: .4s;
 }
 
-/* btn Animation End   */
-
+.imgTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  /*文字の装飾は省略*/
+}
