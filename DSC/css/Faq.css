@@ -23,3 +23,19 @@ html, body {
 .MsgFaq {
     height: 450px;
 }
+
+.Faq p {
+    font-size: 20pt;
+}
+
+.Faq ul {
+    list-style: none;
+}
+
+.Faq li {
+    font-size: 14pt;
+}
+
+.Faq a {
+    font-size: 14pt;
+}
