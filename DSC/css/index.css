@@ -33,7 +33,9 @@ html, body {
 
 #ContentsWrapper {
     width    : 100%;
+    /*
     position:static;
+    */
 }
 
 /*
@@ -48,46 +50,15 @@ html, body {
   width: 0px;
 }
 
-/*
-html, body {
-  font-family: 'Meiryo UI', cursive;
-  padding: 0;
-  margin: 0;
-  border: none;
-  font-size: 16pt;
-  text-align: center;
-  line-height: 50px;
-  color: darkslategray;
-}
-*/
-
-.AboutContents {
+/*共通設定 Start*/
+.AboutContents,
+.WorkContents,
+.RecruitContents,
+.FaqContents {
   position: relative;
   width: 100%;
-  height: 100%;    
-}
-
-@keyframes displayVisible {
-  from {
-      opacity: 0;
-      visibility: hidden;
-  }
-  
-  to {
-      opacity: 1;
-      visibility: visible;
-  }
-}
-
-.AboutPic {
-  margin: 0;
-  position: fixed;
-  z-index: -1;
-}
-
-.AboutPic img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
+  height: 100%;
+  background-color: white;
 }
 
 .AboutPic img,
@@ -98,106 +69,14 @@ html, body {
   height: 100%; 
 }
 
-.MsgAbout {
-  margin: -250px 0 0 0;
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  Top: 1000px;
-  background-color: white;
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-
-.ConAbout {
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  top: 1450px;
-  text-align: center;
-  background-color: white;
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-
-.WorkContents,
-.RecruitContents,
-.FaqContents {
-  position: relative;
-  top: 1550px;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-
-@keyframes slideInRight {
-  from {
-      opacity: 0;
-      transform: translateX(-300%);
-      visibility: hidden;
-  }
-  
-  to {
-      opacity: 1;
-      transform: translateX(0);
-      visibility: visible;
-  }
-}
-
-.WorkContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgWork,
-.ConWork {
-  animation-name: slideInLeft;
-  animation-duration: 5s;    
-}
-
-@keyframes slideInLeft {
-  from {
-      opacity: 0;
-      transform: translateX(300%);
-      /*visibility: hidden;*/
-  }
-  
-  to {
-      opacity: 1;
-      transform: translateX(0);
-      /*visibility: visible;*/
-  }
-}
-
-.RecruitContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgRecruit,
-.ConRecruit {
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-
-.FaqContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgFaq,
-.ConFaq {
-  animation-name: slideInLeft;
-  animation-duration: 5s;   
-}
-
+.MsgAbout
 .MsgWork,
 .MsgRecruit, 
 .MsgFaq {
   height: 700px;
 }
 
+.ConAbout,
 .ConWork,
 .ConRecruit,
 .ConFaq {
@@ -241,21 +120,157 @@ html, body {
 .ConFaq li:hover::before {
   width: 100%;
 }
+/*共通設定 End*/
 
 
-
-
-
-
-#FooterWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position:relative
+/*DSCについて Start*/
+/*
+.AboutPic {
+  margin: 0;
+  position: fixed;
+  z-index: -1;
 }
 
+.AboutPic img {
+  animation-name: displayVisible;
+  animation-duration: 3s;
+}
+
+.MsgAbout {
+  margin: -250px 0 0 0;
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  Top: 1000px;
+  background-color: white;
+  animation-name: slideInRight;
+  animation-duration: 5s;
+}
+
+.ConAbout {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 1450px;
+  text-align: center;
+  background-color: white;
+  animation-name: slideInRight;
+  animation-duration: 5s;
+}
+*/
+/*DSCについて End*/
+
+
+/*業務について Start*/
+/*
+.WorkContents img {
+  animation-name: displayVisible;
+  animation-duration: 3s;
+}
+
+.MsgWork,
+.ConWork {
+  animation-name: slideInLeft;
+  animation-duration: 5s;    
+}
+*/
+/*業務について End*/
+
+
+/*採用情報 Start*/
+/*
+.RecruitContents img {
+  animation-name: displayVisible;
+  animation-duration: 3s;
+}
+
+.MsgRecruit,
+.ConRecruit {
+  animation-name: slideInRight;
+  animation-duration: 5s;
+}
+*/
+/*採用情報 End*/
+
+
+/*お問い合わせ Start*/
+/*
+.FaqContents img {
+  animation-name: displayVisible;
+  animation-duration: 3s;
+}
+
+.MsgFaq,
+.ConFaq {
+  animation-name: slideInLeft;
+  animation-duration: 5s;   
+}
+*/
+/*お問い合わせ End*/
+
+
+/*表示・非表示 Start*/
+/*
+@keyframes displayVisible {
+  from {
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  to {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+*/
+/*表示・非表示 End*/
+
+
+/*スライド(左から右) Start*/
+/*
+@keyframes slideInRight {
+  from {
+      opacity: 0;
+      transform: translateX(-300%);
+      visibility: hidden;
+  }
+  
+  to {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+  }
+}
+*/
+/*スライド(左から右) End*/
+
+
+/*スライド(右から左) Start*/
+/*
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(300%);
+      visibility: hidden;
+  }
+  
+  to {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+  }
+}
+*/
+/*スライド(右から左) End*/
+
+
+/*フッターの設定 Start*/
 #FooterWrapper iframe{
+    margin: 0;
+    padding:0;
     width: 100%;
     height: 300px;
     border: none;
 }
+/*フッターの設定 End*/
