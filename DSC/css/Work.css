@@ -1,47 +1,29 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 html, body {
-    font-family: 'Meiryo UI', cursive;
     padding: 0;
     margin: 0;
-    border: none;
+    width: 100%;
+    font-family: 'Meiryo UI', cursive;
     font-size: 16pt;
     text-align: center;
     line-height: 50px;
+    color: darkslategray;
+    background-color: white;
 }
 
-
 #HeaderWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position: fixed;
-  z-index: 1;
+    width: 100%;
+    height: 100px;
+    position: fixed;
 }
 
 #HeaderWrapper iframe {
     width: 100%;
     height: 50px;
-    height: 300px;
     border: none;
-}
-
-#FooterWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position:relative
-}
-
-#FooterWrapper iframe{
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
-
-.WorkContents {
-    width: 100%;
-    height: 100%;
-    background-color: white;
 }
 
 .WorkContents img {
@@ -49,14 +31,13 @@ html, body {
     height: 100%; 
 }
 
-.WorkContents imgTitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin:0;
-    padding:0;
+.MsgWork {
+    height: 300px;
 }
 
-.MsgWork {
-    height: 450px;
+
+#FooterWrapper iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
 }

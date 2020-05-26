@@ -1,274 +1,99 @@
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0px;
 }
-*/
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Meiryo UI', cursive;
     width: 100%;
+    font-family: 'Meiryo UI', cursive;
     font-size: 16pt;  /* ↓追加 */
     text-align: center;
     line-height: 50px;
     color: darkslategray;
+    background-color: white;
 }
 
+/*ヘッダーの設定 Start*/
 #HeaderWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position: fixed;
-  z-index: 1;
+    width: 100%;
+    height: 100px;
+    position: fixed;
 }
 
 #HeaderWrapper iframe {
     width: 100%;
     height: 50px;
-    height: 300px;
-    border: none;
-    /*
-    position: fixed;
-     */
-}
-
-#ContentsWrapper {
-    width    : 100%;
-    /*
-    position:static;
-    */
-}
-
-/*
-#MainWrapper iframe{
-    width: 100%;
-    height: 7000px;
     border: none;
 }
- */
+/*ヘッダーの設定 End*/
 
- ::-webkit-scrollbar {
-  width: 0px;
-}
 
-/*共通設定 Start*/
-.AboutContents,
-.WorkContents,
-.RecruitContents,
-.FaqContents {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-}
-
+/*CotentsWrapperの設定 Start*/
 .AboutPic img,
 .WorkContents img,
 .RecruitContents img,
 .FaqContents img {
-  width: 100%;
-  height: 100%; 
+    width: 100%;
+    height: 100%; 
 }
 
-.MsgAbout
+.MsgAbout,
 .MsgWork,
 .MsgRecruit, 
 .MsgFaq {
-  height: 700px;
+    height: 300px;
 }
 
 .ConAbout,
 .ConWork,
 .ConRecruit,
 .ConFaq {
-  height: 100px;
+    height: 100px;
 }
 
 .ConAbout li,
 .ConWork li,
 .ConRecruit li,
 .ConFaq li {
-  position: relative;
-  display: inline-block;
-  padding: 0;
+    position: relative;
+    display: inline-block;
+    list-style: none;
 }
 
 .ConAbout a,
 .ConWork a,
 .ConRecruit a,
 .ConFaq a {
-  text-decoration: none;
-  color: darkslategray;
+    text-decoration: none;
+    color: darkslategray;
 }
 
 .ConAbout li::before,
 .ConWork li::before,
 .ConRecruit li::before,
 .ConFaq li::before {
-  position: absolute;
-  content: '';
-  width: 0%;
-  height: 1px;
-  top:calc(100% - 10px);
-  border-radius: 3px;
-  background: darkslategray;
-  transition: .2s;
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    top:calc(100% - 10px);
+    border-radius: 3px;
+    background: darkslategray;
+    transition: .2s;
 }
 
 .ConAbout li:hover::before,
 .ConWork li:hover::before,
 .ConRecruit li:hover::before,
 .ConFaq li:hover::before {
-  width: 100%;
+    color: darkslategray;
+    width: 100%;
 }
-/*共通設定 End*/
-
-
-/*DSCについて Start*/
-/*
-.AboutPic {
-  margin: 0;
-  position: fixed;
-  z-index: -1;
-}
-
-.AboutPic img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgAbout {
-  margin: -250px 0 0 0;
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  Top: 1000px;
-  background-color: white;
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-
-.ConAbout {
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  height: 100px;
-  top: 1450px;
-  text-align: center;
-  background-color: white;
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-*/
-/*DSCについて End*/
-
-
-/*業務について Start*/
-/*
-.WorkContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgWork,
-.ConWork {
-  animation-name: slideInLeft;
-  animation-duration: 5s;    
-}
-*/
-/*業務について End*/
-
-
-/*採用情報 Start*/
-/*
-.RecruitContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgRecruit,
-.ConRecruit {
-  animation-name: slideInRight;
-  animation-duration: 5s;
-}
-*/
-/*採用情報 End*/
-
-
-/*お問い合わせ Start*/
-/*
-.FaqContents img {
-  animation-name: displayVisible;
-  animation-duration: 3s;
-}
-
-.MsgFaq,
-.ConFaq {
-  animation-name: slideInLeft;
-  animation-duration: 5s;   
-}
-*/
-/*お問い合わせ End*/
-
-
-/*表示・非表示 Start*/
-/*
-@keyframes displayVisible {
-  from {
-      opacity: 0;
-      visibility: hidden;
-  }
-  
-  to {
-      opacity: 1;
-      visibility: visible;
-  }
-}
-*/
-/*表示・非表示 End*/
-
-
-/*スライド(左から右) Start*/
-/*
-@keyframes slideInRight {
-  from {
-      opacity: 0;
-      transform: translateX(-300%);
-      visibility: hidden;
-  }
-  
-  to {
-      opacity: 1;
-      transform: translateX(0);
-      visibility: visible;
-  }
-}
-*/
-/*スライド(左から右) End*/
-
-
-/*スライド(右から左) Start*/
-/*
-@keyframes slideInLeft {
-  from {
-      opacity: 0;
-      transform: translateX(300%);
-      visibility: hidden;
-  }
-  
-  to {
-      opacity: 1;
-      transform: translateX(0);
-      visibility: visible;
-  }
-}
-*/
-/*スライド(右から左) End*/
-
+/*CotentsWrapperの設定 End*/
 
 /*フッターの設定 Start*/
 #FooterWrapper iframe{
-    margin: 0;
-    padding:0;
     width: 100%;
     height: 300px;
     border: none;

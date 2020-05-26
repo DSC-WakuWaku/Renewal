@@ -1,39 +1,29 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 html, body {
-    font-family: 'Meiryo UI', cursive;
     padding: 0;
     margin: 0;
-    border: none;
+    width: 100%;
+    font-family: 'Meiryo UI', cursive;
     font-size: 16pt;
     text-align: center;
     line-height: 50px;
+    color: darkslategray;
+    background-color: white;
 }
 
 
 #HeaderWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position: fixed;
-  z-index: 1;
+    width: 100%;
+    height: 100px;
+    position: fixed;
 }
 
 #HeaderWrapper iframe {
     width: 100%;
     height: 50px;
-    height: 300px;
-    border: none;
-}
-
-#FooterWrapper {
-  width: 100%;
-  height: 300px;
-  border: none;
-  position:relative
-}
-
-#FooterWrapper iframe{
-    width: 100%;
-    height: 300px;
     border: none;
 }
 
@@ -44,7 +34,6 @@ html, body {
 }
 
 .FaqContents {
-    position: relative;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -68,4 +57,17 @@ html, body {
 
 .Faq a {
     font-size: 14pt;
+}
+
+#FooterWrapper {
+  width: 100%;
+  height: 300px;
+  border: none;
+  position:relative
+}
+
+#FooterWrapper iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
 }
